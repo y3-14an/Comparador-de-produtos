@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparador de Preços</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🔎 Comparador de Produtos</h1>
+    <p>Pesquise e compare preços rapidamente</p>
+  </header>
+
+  <main>
+    <!-- Barra de pesquisa -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Digite o nome do produto...">
+      <button onclick="buscarProduto()">Buscar</button>
+    </div>
+
+    <!-- Resultados -->
+    <div id="results" class="results"></div>
+  </main>
+
+  <footer>
+    <p>Dados via Mercado Livre API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
