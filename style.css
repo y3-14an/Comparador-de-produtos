@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Área principal */
+main {
+  padding: 20px;
+}
+
+/* Barra de pesquisa */
+.search-box {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #4338ca;
+}
+
+/* Resultados */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card do produto */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.price {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.variations {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #777;
+}
